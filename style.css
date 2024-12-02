@@ -1,6 +1,6 @@
 html {
     margin: 0 auto;
-    position: relative; 
+    position: relative;
     /* Fix for absolute positioning */
 }
 
@@ -9,22 +9,30 @@ body {
     margin: 0;
     box-sizing: border-box;
     font-family: 'Montserrat';
-    min-height: 100vh;  
+    min-height: 100vh;
+    /*justify-self: center; */
+    background: rgb(240, 244, 245);
+    background-image: url('./images/bg4.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 /* HEADER */
 
 .headerContainer {
     background-color: #0a739c;
-    max-width: 100%;
+    max-width: 1300px;
+    width: 100%;
     padding: 0px 20px 0px 20px;
 }
 
 .header {
+    top: 0;
+    margin: 0;
     position: sticky;
     display: flex;
     flex-direction: row;
-    top: 0;
     height: 60px;
     width: 100%;
     background-color: #0a739c;
@@ -32,8 +40,6 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px 20px 20px 10px;
-    max-width: 1300px;
-    margin: auto;
 }
 
 .sitelogo {
@@ -46,11 +52,11 @@ body {
     border-radius: 5%;
 }
 
-.headerLinks { 
-    justify-content: right; 
+.headerLinks {
+    justify-content: right;
     align-items: center;
     list-style: none;
-    width: 60%; 
+    width: 60%;
 }
 
 .headerLinks a {
@@ -69,7 +75,7 @@ body {
 .searchBar {
     position: relative;
     text-align: right;
-    justify-content: right; 
+    justify-content: right;
 }
 
 .searchBar input {
@@ -118,14 +124,11 @@ body {
     text-align: center;
 }
 
-.pic { 
-    height:300px;
-    width:632px;
-    }
-
-.box {
-    padding: 0 20px 0 20px;
+.pic {
+    height: 360px;
+    width: 758px;
 }
+
 
 /* BOX CARDS  */
 
@@ -139,16 +142,22 @@ body {
     max-width: 1300px;
     margin-right: 20px;
     margin-left: 20px;
-    text-align: center; 
+    text-align: center;
 }
 
 .mostBoxes {
     display: flex;
     flex-direction: row;
+    width: 100%;
     align-items: center;
     text-align: center;
     justify-content: space-between;
     margin-top: 40px;
+}
+
+.box {
+    padding: 0 20px 0 20px;
+    display: block;
 }
 
 .boxImg img {
@@ -166,7 +175,7 @@ body {
 
 
 .description {
-    font-size: 11px;
+    font-size: 12px;
     background-color: rgb(223, 223, 223);
     padding: 10px;
     border-radius: 2%;
